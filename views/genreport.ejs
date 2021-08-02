@@ -1,0 +1,91 @@
+<html>
+    <head>
+        <title>Report | e-School</title>
+		<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+  <style>
+  .jumbotron {
+    background-color: #f4511e; /* Orange */
+    color: #ffffff;
+}
+.btn2 {
+  border: 2px solid black;
+  background-color: white;
+  color: black;
+  /* padding: 14px 28px; */
+  font-size: 16px;
+  cursor: pointer;
+  width: 10%;
+  height: 8%;
+  border-radius: 10px;
+  
+}
+/* Blue */
+.info {
+  border-color: #2196F3;
+  color: dodgerblue;
+}
+
+.info:hover {
+  background: #2196F3;
+  color: white;
+}
+
+</style>
+<script>
+function printfunction() {
+    window.print();
+}
+</script>
+    </head>
+    <body>
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">e-School</a>
+    </div>
+	
+<ul class="nav navbar-nav">
+      <li><a href="">Home</a></li>
+      <li><a href="">About us</a></li>
+      <li><a href="">Feedback</a></li>
+	  <li><a href="">Content Suggestions</a></li>
+	  <li class="active"><a href="/adminlogin">Admin Login</a></li>
+	  
+	 <p class="navbar-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+ <p class="navbar-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+ <p class="navbar-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+ <p class="navbar-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+ <p class="navbar-text">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </p>
+ <a href="/"><button class="btn btn-danger navbar-btn"> Logout</button></a>
+    </ul>
+  </div>
+</nav>
+<div class="jumbotron text-center">
+  <h1>Welcome Admin</h1>
+
+  <p><p>Click the button to display the User responses & records</p></p>
+</div>
+<CENTER>
+<!-- <FORM NAME="GEN_REPORT" ACTION="report.php" METHOD="POST"> -->
+ <!-- <INPUT TYPE="SUBMIT" VALUE="Student Records" onclick="alert()"> -->
+  <!-- <button onclick="myFunction()">Student Records</button> -->
+  <button class="btn2 info"><a href="/userreport" style="text-decoration: none; color:black">Student Records</a></button><br><br>  
+  <button class="btn2 info"><a href="/sugesreport" style="text-decoration: none; color:black">All Suggestions</a></button><br><br>  
+  <button class="btn2 info"><a href="/feedbackreport" style="text-decoration: none; color:black">All Feedbacks</a></button>
+</CENTER>
+</FORM>
+</body>
+
+<!-- <script>
+function myFunction() {
+  alert("Website Under construction!");
+}
+</script> -->
+
+</html>

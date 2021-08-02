@@ -1,0 +1,272 @@
+<HTML>
+<LINK REL="STYLESHEET" TYPE="TEXT/CSS" HREF="STYLEGUIDE.CSS"></LINK>
+<TITLE>R School | e-School</TITLE>
+<style>
+/* for collapse  */
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-top: 4px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+/* till here */
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+h1 {
+  text-align: center;
+  font-size: 18pt;
+  color: rgb(0, 0, 0);
+  font-size:300%;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: -2%;
+}
+.button {
+	display:inline-block;
+    height: 50px;
+    line-height: 30px;
+    width: 150px auto;
+	margin: 0 px auto;
+    color:blue;
+    text-align: center;
+    border: solid #427AA8 1px;
+    border-radius: 5px;
+	padding: 10px;
+}
+
+.button:hover {
+    background: #59A3E0;
+}
+body{
+background-color:#ffff;
+}
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+footer
+{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 7px;
+    margin-bottom: -1%
+
+  }
+</style>
+
+</HEAD>
+
+<BODY>
+    <div style="font-size: 17px; font-family: Arial, Helvetica, sans-serif; text-align:justify"  >
+        <a href="/AfterStuLogin" class="button"><img src="../assets/home-512.png" style="width:20; height:20; margin-top:6px;"></a>
+        <H1>Solved Numericals</h1>
+                   <div class="row">
+                    <div class="column" style="background-color:#e6e6e6;">
+                      <h2>Thevenin’s Theorem</h2>
+                      <p>1. Consider the circuit shown below. Find the equivalent Thevenin’s voltage between nodes
+                             A and &nbsp; &nbsp;&nbsp;B.</p>
+                          <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q1.png" alt="Bilateral Elements" />
+                          <br />
+                                    a) 1<br />
+                                    b) 2<br />
+                                    c) 1.7<br />
+                                    d) 2.7<br />
+                                    <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                    <div class="content">
+                                        <p>Answer: b <br>
+                                            Explanation: The thevenin’s voltage is equal to the 
+                                            open circuit voltage across the terminals AB that is 
+                                            across 12Ω resistor. Vth = 10×12/14 = 8.57V.
+                                        </p>
+                                    </div>
+                      <p>3. Determine the equivalent thevenin’s voltage between terminals ‘a’ and ‘b’ in the circuit shown below.</p>
+                          <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q8.png" alt="Question3" />
+                          <br />
+                                    a) 0.7<br />
+                                    b) 1.7<br />
+                                    c) 2.7<br />
+                                    d) 3.7<br />
+                                    <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                    <div class="content">
+                                        <p>Answer: c <br>
+                                            Explanation: The voltage at terminal a is Va=(100×6)/16=37.5V, The voltage at terminal b is <br>
+                                            Vb=(100×8)/23=34.7V. So the voltage across the terminals ab is 
+                                            <br>Vab=Va-Vb=37.5-34.7=2.7V.
+                                        </p>
+                                    </div>
+                        <h2>Norton’s Theorem</h2>
+                        <p>5. Calculate the Norton resistance for the following circuit if 5 ohm is the load resistance.</p>
+                         <img src="https://www.sanfoundry.com/wp-content/uploads/2018/02/basic-electrical-engineering-questions-answers-nortons-theorem-q7.png" alt="Question5" />
+                         <br />
+                                   a) 10 ohm<br />
+                                   b) 11 ohm<br />
+                                   c) 12 ohm<br />
+                                   d) 13 ohm<br />
+                                   <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                   <div class="content">
+                                       <p>Answer: c <br>
+                                           Explanation: Shorting all voltage sources and opening all current sources we have:<br>
+                                           RN=(3||6)+10 = 12 ohm.
+                                       </p>
+                                   </div>
+                        <p>7.  Find the current in the 5 ohm resistance using Norton’s theorem.</p>
+                         <img src="https://www.sanfoundry.com/wp-content/uploads/2018/02/basic-electrical-engineering-questions-answers-nortons-theorem-q7.png" alt="Question5" />
+                         <br />
+                         a) 1A <br />
+                         b) 1.5A<br />
+                         c) 0.25A<br />
+                         d) 0.5A<br />
+                                   <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                   <div class="content">
+                                       <p>Answer: d<br>
+                                        Explanation: Shorting all voltage sources and opening all current sources we have:<br>
+                                        RN=(3||6)+10 = 12 ohm.<br>
+                                        Since the 5 ohm is the load resistance, we short it and find the resistance through the short.
+                                        If we apply source transformation between the 6 ohm resistor and the 1A source, we get a 6V source in series with a 6 ohm resistor. Now we have two meshes. Let us consider I1 flowing in the first mesh and I2 flowing in the second mesh.
+                                        The mesh equations are:<br>
+                                        9I1-6I2=4<br>
+                                        -6I1+16I2=6<br>
+                                        On solving these equations simultaneously, we get I2=0.72A, which is the short circuit current.
+                                        Connecting the current source in parallel to RN which is in turn connected in parallel to the load resistance=5ohm, we get Norton’s equivalent circuit.<br>
+                                        Using current divider: I = 0.72*12/(12+5) = 0.5 A.
+                                       </p>
+                                   </div>
+
+                    </div>
+                    <div class="column" style="background-color:#cccccc;">
+                        <p style="margin-top: 73px;">2. Consider the circuit shown below. Find the thevenin’s resistance between terminals A and B.</p>
+                         <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q1.png" alt="Question2" style="margin-top: 21px;" />
+                         <br />
+                                   a) 0.33<br />
+                                   b) 0.66<br />
+                                   c) 0<br />
+                                   d) 0.99<br />
+                                   <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                   <div class="content">
+                                       <p>Answer: a <br>
+                                        Explanation: The equivalent thevenin’s model of the circuit shown is<br>
+                                        <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q3.png" alt="Question2answer" /><br>
+                                        I=8.57/(2.4+1.71)=0.33A.
+                                       </p>
+                                   </div>
+                        <p>4. Find the current through 5Ω resistor in the following circuit.</p>
+                         <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q8.png" alt="Question4"
+                         style="margin-top: 18px;" />
+                         <br />
+                                   a) 0.1<br />
+                                   b) 0.2<br />
+                                   c) 0.3<br />
+                                   d) 0.4<br />
+                                   <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                   <div class="content">
+                                       <p>Answer: b <br>
+                                        Explanation: The Equivalent Thevenin’s circuit for the circuit shown above is<br>
+                                        <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-thevenins-theorem-q10.png" alt="Question4answer" /><br>
+                                        I=2.7/(8.96+5)=0.193A≅0.2A.
+                                       </p>
+                                   </div>
+                        <p style="margin-top: 73px;">6. Calculate the short circuit current is the 5 ohm resistor is the load resistance.</p>
+                                   <img src="https://www.sanfoundry.com/wp-content/uploads/2018/02/basic-electrical-engineering-questions-answers-nortons-theorem-q7.png" alt="Question6" />
+                                   <br />
+                                   a) 0.72A<br>
+                                   b) 0.32A<br>
+                                   c) 0.83A<br>
+                                   d) 0.67A<br />
+                                            
+                                             <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                             <div class="content">
+                                                 <p>Answer: a <br>
+                                                    Explanation: Since the 5 ohm is the load resistance, we short it and find the resistance through the short.
+                                                    If we apply source transformation between the 6 ohm resistor and the 1A source, we get a 6V source in series with a 6 ohm resistor. Now we have two meshes. Let us consider I1 flowing in the first mesh and I2 flowing in the second mesh.</br>
+                                                    The mesh equations are:<br>
+                                                    9I1-6I2=4<br>
+                                                    -6I1+16I2=6<br>
+                                                    On solving these equations simultaneously, we get I2=0.72A, which is the short circuit current.<br>
+                                                  
+                                                 </p>
+                                             </div>
+                        <p>8. In the following circuit, the current drawn by 2Ω resistor (a-b) after the source is replaced is?</p>
+                                   <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-reciprocity-theorem-q4.png" alt="Question8" style="margin-top: 21px;"/><br>
+                                   <br />
+                                    a) 143<br>
+                                    b) 14.3<br>
+                                    c) 1.43<br>
+                                    d) 0.143<br>
+                                            
+                                             <button class="collapsible">Answer &nbsp; <i class="arrow down"></i></button>
+                                             <div class="content">
+                                                 <p>Answer: c <br>
+                                                    Explanation: The circuit after the source is replaced is<br>
+                                                    <img src="https://www.sanfoundry.com/wp-content/uploads/2017/06/network-theory-questions-answers-reciprocity-theorem-q5.png" alt="Question8answer" /><br>
+                                                    Total resistance = 3.23Ω. The current drawn by the circuit (It)=20/3.23=6.19A. The current in branch a-b is 1.43A.
+                                                 </p>
+                                             </div>
+                    </div>
+                </div>
+        
+    </div>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+    
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+</script>
+<footer>
+  <p >Copyright &copy; 2021, e-School. </p>
+</footer>
+</BODY>
+</HTML>
+      
+    

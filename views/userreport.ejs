@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student records | Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      .big_container{
+        margin-top: 3%;
+      }
+    </style>
+</head>
+<body>
+    <div class="big_container">
+    <div class="container">
+
+      <h2 style="text-align: center; color: rgb(100, 100, 100); font-family: sans-serif; padding-bottom: 1%;">Student records</h2>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col">ID</th> -->
+            <th scope="col">ID</th>
+            <th scope="col">Email (Username)</th>
+            <th scope="col">Passwrod</th>
+          </tr>
+        </thead>
+        <tbody>
+            <%UsersList.forEach(User => {%>
+                <tr>
+                    <th scope="row"><%= User._id %></th>
+                    <td><%= User.email %></td>
+                    <td><%= User.password %></td>
+                </tr>
+            <%})%>
+        </tbody>
+      </table>
+      <div class="col-sm-offset-5 col-sm-2 text-center pb-10">
+        <a class="btn btn-primary float-right" href="/back">&larr;BACK</a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

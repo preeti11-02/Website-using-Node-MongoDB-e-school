@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion | Report</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <style>
+      .big_container{
+        margin-top: 3%;
+      }
+    </style>
+</head>
+<body>
+    <div class="big_container">
+    <div class="container">
+
+      <h2 style="text-align: center; color: rgb(100, 100, 100); font-family: sans-serif; padding-bottom: 1%;">Suggestions</h2>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <!-- <th scope="col">ID</th> -->
+            <th scope="col">Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">Was our content helpful?</th>
+            <th scope="col">On which section you are talking about?</th>
+            <th scope="col">Your valuable suggestions:</th>
+          </tr>
+        </thead>
+        <tbody>
+        <%suggestions1List.forEach(suggestions => {%>
+            <tr>
+                <td scope="row"><%= suggestions.name %></td>
+                <td><%= suggestions.email %></td>
+                <td><%= suggestions.was %></td>
+                <td><%= suggestions.om %></td>
+                <td><%= suggestions.your %></td>
+            </tr>
+        <%})%>
+        </tbody>
+      </table>
+      <div class="col-sm-offset-5 col-sm-2 text-center pb-10">
+        <a class="btn btn-primary float-right" href="/back">&larr;BACK</a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

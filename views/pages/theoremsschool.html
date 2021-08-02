@@ -1,0 +1,259 @@
+<html>
+<head>
+<title>Theorems School | e-School</title>
+<style>
+h1{
+font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+font-size: xx-large;
+margin-top: -3%;
+margin-left: 20%;
+margin-right: 20%;
+}
+hr {
+  margin-top: 3.5em;
+  border-width: 1px;
+  color: #fff;
+}
+.content {
+  margin-top:2em;
+  margin-left:10%;
+  margin-right:10%;
+  padding:0;
+}
+body {
+  font-family:'Arial', sans-serif;
+  font-size:81.25%;
+  color:#222;
+  background-color: rgb(255, 254, 254);
+  line-height:1.67;
+  overflow: auto;
+}
+em {
+  font-style: italic
+}
+h1 {
+  margin-bottom:.50em;
+  text-align: center
+}
+td {
+  border:1px solid #bbb;
+}
+th {
+  border:0;
+  border-bottom:1px solid black;
+  font-weight:bold;
+  background:rgb(229, 236, 249);
+}
+code{
+  color:#009900;
+}
+.tip {
+  background-color:#fffbd9;
+  padding:6px 8px 6px 10px;
+  border-left:5px solid #ffef70;
+}
+code {
+  background-color:#FAFAFA;
+}
+h6{
+  text-align: center;
+  font-style: italic;
+  }
+  footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 1px;
+    margin-bottom: -1%;
+    margin-left: -0.5%;
+    margin-right: -0.5%;
+  }
+</style>
+</head>
+<body>
+  <div class="content">
+<a href="/AfterStuLogin" class="button"><img src="../assets/home-512.png" style="width:20; height:20; margin-top:6px;"></a>
+<div style="margin-left: 5%; margin-right: 5%;">
+<h1>Introduction to Network Theorems in Electrical Engineering</h1>
+<div style="font-family: Verdana, Geneva, Tahoma, sans-serif; text-align: justify; font-size: large;" >
+  <h2>Introduction</h2>
+  <p>
+    Electric circuit theorems are always beneficial to help find voltage and currents in multi-loop circuits. 
+    These theorems use fundamental rules or formulas and basic equations of mathematics to analyze basic 
+    components of electrical or electronics parameters such as voltages, currents, resistance, and so on. 
+    These fundamental theorems include the basic theorems like Superposition theorem, Tellegen’s theorem, 
+    Norton’s theorem, Maximum power transfer theorem, and Thevenin’s theorems. Another group of network 
+    theorems that are mostly used in the circuit analysis process includes the Compensation theorem, 
+    Substitution theorem, Reciprocity theorem, Millman’s theorem, and Miller’s theorem.
+  </p>
+  <h2>1. Super Position Theorem</h2>
+  <p>The Superposition theorem is a way to determine the currents and voltages present in a 
+    circuit that has multiple sources (considering one source at a time). The superposition 
+    theorem states that in a linear network having a number of voltage or current sources and 
+    resistances, the current through any branch of the network is the algebraic sum of the currents 
+    due to each of the sources when acting independently.
+  </p>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/3.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>Super Position Theorem</h6>
+  <p>Superposition theorem is used only in linear networks. This theorem is used in both AC and DC 
+    circuits wherein it helps to construct Thevenin and Norton equivalent circuit.</p>
+  <p>In the above figure, the circuit with two voltage sources is divided into two individual 
+    circuits according to this theorem’s statement. The individual circuits here make the whole 
+    circuit look simpler in easier ways. And, by combining these two circuits again after individual simplification, 
+    one can easily find parameters like voltage drop at each resistance, node voltages, currents, etc.
+  </p>
+  <h2>2. Thevenin’s Theorem</h2>
+  <p>
+    <b>Statement:</b> A linear network consisting of a number of voltage sources and resistances can be replaced 
+    by an equivalent network having a single voltage source called Thevenin’s voltage (Vthv) and a single 
+    resistance called (Rthv).
+  </p>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/11.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Thevenin’s Theorem
+  </h6>
+  <p>
+    The above figure explains how this theorem is applicable for circuit analysis. Thevinens voltage is calculated by the given 
+    formula between the terminals A and B by breaking the loop at the terminals A and B. Also, Thevinens resistance or 
+    equivalent resistance is calculated by shorting voltage sources and open 
+     circuiting current sources as shown in the figure.
+  </p>
+  <p>
+    This theorem can be applied to both linear and bilateral networks. It 
+    is mainly used for measuring the resistance with a Wheatstone bridge.
+  </p>
+  <h2>
+    3. Norton’s Theorem
+  </h2>
+  <p>
+    This theorem states that any linear circuit containing several energy sources and resistances can 
+    be replaced by a single constant current generator in parallel with a single resistor.
+  </p>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/nnn.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Norton’s Theorem
+  </h6>
+  <p>
+    This is also the same as that of the Thevinens theorem, in which we find Thevinens 
+    equivalent voltage and resistance values, but here current equivalent values are determined. 
+    The process of finding these values is shown as given in the example within the above figure.
+  </p>
+  <h2>
+    4. Maximum Power Transfer Theorem
+  </h2>
+  <p>
+    This theorem explains the condition for the maximum power transfer to 
+    load under various circuit conditions. The theorem states that the power transfer by a source to a load is
+     maximum in a network when the load resistance is equal to the internal resistance of the source
+     . For AC circuits load impedance should match with the source impedance for maximum power transfer even if
+      the load is operating at different power factors.
+  </p>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/21.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Maximum Power Transfer Theorem
+  </h6>
+  <p>For instance, the above figure depicts a circuit diagram wherein a circuit is simplified up to a 
+    level of source with internal resistance using Thevenin’s theorem. The power transfer will be maximum 
+    when this Thevinens resistance is equal to the load resistance. The Practical application of this theorem 
+    includes an audio system wherein the resistance of the speaker must be matched to the audio power amplifier 
+    to obtain maximum output.
+  </p>
+  <h2>5. Reciprocity Theorem</h2>
+  <p>
+    Reciprocity theorem helps to find the other corresponding solution even without further work, once the circuit is 
+    analyzed for one solution. The theorem states that in a linear passive bilateral network, the excitation source and
+     its corresponding response can be interchanged.
+  </p>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/4.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Reciprocity Theorem
+  </h6>
+  <p>
+    In the above figure, the current in the R3 branch is I3 with a single source Vs. If this source is replaced to the 
+    R3 branch and shorting the source at the original location, then the current flowing from the original 
+    location I1is the same as that of I3. This is how we can find corresponding solutions for the circuit once 
+    the circuit is analyzed with one solution.
+  </p>
+  <h2>
+    6. Compensation Theorem
+  </h2>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/7.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Compensation Theorem
+  </h6>
+  <p>
+    In any bilateral active network, if the amount of impedance is changed from the 
+    original value to some other value carrying a current of I, then the resulting changes that occur in other branches are same as 
+    those that would have been caused by the injection voltage source in the modified branch with a negative sign, i.e., minus of voltage
+     current and changed impedance product. The four figures given above show how this compensation theorem is applicable
+      in analyzing the circuits.
+  </p>
+  <h2>
+    7. Millman’s Theorem
+  </h2>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/5.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Millman’s Theorem
+  </h6>
+  <p>
+    This theorem states that when any number of voltage sources 
+    with finite internal resistance is operating in parallel can be replaced with a single voltage source
+     with series equivalent impedance. The Equivalent voltage for these parallel sources with internal sources in
+      Millman’s theorem is calculated by the below-given formula, which is shown in the above figure.
+  </p>
+  <h2>8. Tellegen’s theorem</h2>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/6.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Tellegen’s theorem
+  </h6>
+  <p>
+    This theorem is applicable for circuits with a linear or nonlinear, passive, or active and hysteric or non-hysteric networks. 
+    It states that the summation of instantaneous power in the circuit with n number of branches is zero.
+  </p>
+  <h2>
+    9. Substitution Theorem
+  </h2>
+  <div>
+    <center><iframe width="500" height="300" src="https://www.youtube.com/embed/CURpzrOmPHs" allowfullscreen></iframe>
+    </center>
+  </div>
+  <h6>
+    Substitution Theorem Video
+  </h6>
+  <p>
+    This theorem states that any branch in a network can be substituted by a different branch 
+    without disturbing the currents and voltages in the whole network provided the new branch has
+     the same set of terminal voltages and current as of the original branch. The substitution theorem can
+      be used in both linear and nonlinear circuits.
+  </p>
+  <h2>
+    10. Miller’s Theorem
+  </h2>
+  <img src="https://www.elprocus.com/wp-content/uploads/2014/03/mmm.jpg" style="display: block; margin-left: auto; margin-right: auto;">
+  <h6>
+    Miller’s Theorem
+  </h6>
+  <p>
+    This theorem states that in a linear circuit if a branch exists with 
+    impedance Z connected between two nodes with nodal voltages, this branch can be replaced by two
+     branches connecting the corresponding nodes to the ground by two impedances. The
+      application of this theorem is not only an effective tool for creating an equivalent circuit but also a tool for designing modified additional
+       electronic circuits by impedance.
+  </p>
+  <p>These are all basic network theorems used widely in the electrical or electronic circuit analysis. 
+    We hope that you might have got some basic ideas about all these theorems.
+  </p>
+  <p>
+    <b>The attention and interest with which you have read this article are really encouraging 
+      for us, and therefore, we anticipate your additional interests on any 
+      other topics, projects, and works. So you can write to us about your feedback, comments, 
+      and suggestions in the comments section given below.</b>
+  </p>
+</div>
+</div>
+</div>
+<footer>
+  <p>Copyright &copy; 2021, e-School. </p>
+</footer>
+</body>
+</html>
